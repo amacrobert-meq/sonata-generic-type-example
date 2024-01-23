@@ -1,0 +1,10 @@
+version: '3'
+services:
+  php:
+    build:
+      context: .
+    container_name: sonata-generic-type-example
+    volumes:
+      - .:/var/task:delegated
+    ports:
+      - 8345:8000
